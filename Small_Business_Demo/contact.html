@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit | North Valley Coffee Co.</title>
+    <meta name="description" content="Visit North Valley Coffee Co. to learn about our roasts, pick up a bag and ask about gift boxes or coffee subscriptions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page-transition" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="North Valley Coffee Co. home">
+          <span class="brand-mark">N</span>
+          <span>North Valley Coffee Co.</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Shop</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html" class="active">Visit</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Visit us</p>
+          <h1>Drop by for fresh coffee, good conversation and a slower start to the day.</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="contact-card reveal">
+            <h3>Roastery hours</h3>
+            <p>Stop by for beans, brewers, gift boxes and a freshly brewed cup from our bar.</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> hello@northvalleycoffee.com</li>
+              <li><strong>Phone:</strong> (415) 555-0197</li>
+              <li><strong>Hours:</strong> Tuesday-Sunday, 7am-3pm</li>
+              <li><strong>Location:</strong> 118 Valley Lane, Ashford</li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" action="#" method="post">
+            <div class="field-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com" />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span>Favorite roast</span>
+                <input type="text" name="roast" placeholder="Sunrise Blend, Valley Roast, etc." />
+              </label>
+              <label>
+                <span>Interest</span>
+                <select id="package-select" name="interest">
+                  <option value="Beans">Beans</option>
+                  <option value="Gift box">Gift box</option>
+                  <option value="Coffee subscription">Coffee subscription</option>
+                  <option value="Just saying hello">Just saying hello</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" placeholder="Tell us what you’re looking for, or send a note for gift recommendations."></textarea>
+            </label>
+
+            <div class="form-meta">
+              <small>Typical response time: within 1 business day.</small>
+              <small>Fresh roasts arrive every Friday.</small>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send a note</button>
+            <p id="form-status" class="form-status" hidden aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> North Valley Coffee Co.</p>
+        <ul>
+          <li><a href="services.html">Shop</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Visit</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

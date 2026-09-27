@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - ModernWebsByAdam</title>
+    <meta name="description" content="Get in touch with Adam for your web project, quotes, availability and collaborations." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+  </head>
+  <body>
+    <div id="page-transition" class="page-transition" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/Website/index.html"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" opacity="0.12"></rect><path d="M4 16V8a2 2 0 012-2h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ModernWebsByAdam</span></a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span class="hamburger" aria-hidden="true"></span></button>
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="/Website/index.html" class="btn btn-ghost">Home</a></li>
+            <li><a href="/Website/services.html" class="btn btn-ghost">Services</a></li>
+            <li><a href="/Website/about.html" class="btn btn-ghost">About</a></li>
+            <li><a href="/Website/contact.html" class="btn btn-ghost">Contact</a></li>
+            <li class="nav-currency-item">
+              <span class="nav-currency-label">Currency</span>
+              <label class="sr-only" for="currency-select">Currency</label>
+              <select id="currency-select" class="nav-currency-select" aria-label="Select a currency for package pricing">
+                <option value="automatic">Auto</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="contact-hero reveal">
+        <div class="grid" style="grid-template-columns:1fr 420px;gap:2rem;align-items:start;">
+          <div>
+            <h1>Let's build something great together</h1>
+            <p class="lead">Share the basics and I’ll get back within 48 hours with availability and a rough scope & quote.</p>
+
+            <ul class="contact-info">
+              <li><strong>Email:</strong> <a href="mailto:hello@modernwebsbyadam.com">hello@modernwebsbyadam.com</a></li>
+              <li><strong>Availability:</strong> Freelance / Contract</li>
+              <li><strong>Location:</strong> Remote (global)</li>
+            </ul>
+          </div>
+
+          <aside class="reveal">
+            <div class="large-square">
+              <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_0yfsb3a1.json" background="transparent" speed="1" loop autoplay></lottie-player>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="container" style="padding-top:1.5rem">
+        <form id="contact-form" class="contact-form reveal" action="mailto:hello@modernwebsbyadam.com" method="post" enctype="text/plain">
+          <div class="form-grid">
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+            <input id="email" name="email" type="email" placeholder="Email address" required>
+            <input id="company" name="company" type="text" placeholder="Company (optional)">
+            <input id="budget" name="budget" type="text" placeholder="Budget (optional)">
+            <label for="package-select" class="sr-only">Package (optional)</label>
+            <select id="package-select" name="package">
+              <option value="">Select a package (optional)</option>
+              <option value="Starter">Starter - Small sites</option>
+              <option value="Growth">Growth - CMS & funnels</option>
+              <option value="Enterprise">Enterprise - Custom</option>
+              <option value="Other">Not sure / Other</option>
+            </select>
+            <textarea id="message" name="message" rows="8" placeholder="Describe your project, timeline and any links (required)" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send message</button>
+            <small class="muted">Or email <a href="mailto:hello@modernwebsbyadam.com">hello@modernwebsbyadam.com</a></small>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> ModernWebsByAdam - Built with care.</p>
+        <ul class="footer-links">
+          <li><a href="https://portfolio-d0a.pages.dev">Portfolio</a></li>
+          <li><a href="/Website/services.html">Services</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

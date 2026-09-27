@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>North & Pine | Cart</title>
+    <meta name="description" content="Review your cart, apply a promo code, and proceed to checkout." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="page-transition" class="page-transition" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="North and Pine home">
+          <span class="logo-mark">N</span>
+          <span>North &amp; Pine</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="index.html#collections">Rooms</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" id="search-toggle" type="button" aria-label="Search products">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.88 12.8l4.42 4.4 1.4-1.4-4.4-4.42A7.5 7.5 0 1010.5 3zm0 2a5.5 5.5 0 110 11 5.5 5.5 0 010-11z"/></svg>
+          </button>
+          <button class="cart-pill" id="cart-toggle" type="button" aria-label="View shopping cart">
+            Cart <span id="cart-count">2</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="cart-page">
+      <div class="container cart-layout">
+        <section class="cart-panel">
+          <span class="eyebrow">Your bag</span>
+          <h2>Review your cart</h2>
+          <ul class="cart-review-list" id="cart-review-items"></ul>
+        </section>
+
+        <aside class="summary-panel">
+          <span class="eyebrow">Summary</span>
+          <h3>Order totals</h3>
+
+          <form id="promo-form" class="promo-form" action="#" method="get">
+            <input id="promo-code" type="text" placeholder="Promo code" aria-label="Promo code" />
+            <button type="submit" class="secondary-action">Apply</button>
+          </form>
+
+          <p id="promo-note" class="promo-note">Use code SAVE10 for 10% off.</p>
+
+          <div class="summary-list">
+            <div class="summary-row-item">
+              <span>Subtotal</span>
+              <strong id="cart-review-subtotal">$0.00</strong>
+            </div>
+            <div class="summary-row-item">
+              <span>Discount</span>
+              <strong id="promo-discount">-$0.00</strong>
+            </div>
+            <div class="summary-row-item total-row">
+              <span>Total</span>
+              <strong id="cart-review-total">$0.00</strong>
+            </div>
+          </div>
+
+          <button id="checkout-btn" class="primary-action" type="button" style="width:100%; margin-top:1rem;">Proceed to checkout</button>
+        </aside>
+      </div>
+    </main>
+
+    <div class="search-overlay" id="search-overlay" hidden></div>
+
+    <aside class="search-panel" id="search-panel" aria-label="Search products" aria-hidden="true">
+      <div class="search-header">
+        <div>
+          <span class="eyebrow cart-eyebrow">Find your favorites</span>
+          <h3>Search products</h3>
+        </div>
+        <button type="button" class="cart-close" id="search-close" aria-label="Close search">×</button>
+      </div>
+
+      <div class="search-field-wrap">
+        <input id="search-input" type="search" placeholder="Search lamps, bottles, travel gear..." aria-label="Search products" />
+      </div>
+
+      <ul class="search-results" id="search-results"></ul>
+    </aside>
+
+    <div class="cart-overlay" id="cart-overlay" hidden></div>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <span class="eyebrow cart-eyebrow">Your cart</span>
+          <h3>Shopping bag</h3>
+        </div>
+        <button type="button" class="cart-close" id="cart-close" aria-label="Close cart">×</button>
+      </div>
+
+      <ul class="cart-items" id="cart-items"></ul>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="cart-subtotal">$0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Delivery</span>
+          <strong>$0</strong>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+        <button type="button" class="view-cart-btn">View cart</button>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="logo footer-logo" href="index.html">
+            <span class="logo-mark">N</span>
+            <span>North &amp; Pine</span>
+          </a>
+          <p>Everyday design for a slower, lighter life.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html#collections">Rooms</a>
+          <a href="index.html#reviews">Reviews</a>
+          <a href="mailto:hello@northandpine.com">hello@northandpine.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

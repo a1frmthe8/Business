@@ -1,0 +1,165 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>ModernWebsByAdam - Professional Web Development</title>
+		<meta name="description" content="Modern, fast and accessible websites built by Adam. Portfolio, services and contact." />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="style.css">
+			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+	</head>
+	<body>
+			<div id="page-transition" class="page-transition" aria-hidden="true"></div>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="logo" href="#">
+					<svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+						<rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" opacity="0.12"></rect>
+						<path d="M4 16V8a2 2 0 012-2h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<span>ModernWebsByAdam</span>
+				</a>
+
+						<button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+							<span class="hamburger" aria-hidden="true"></span>
+						</button>
+
+						<nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+					<ul>
+						<li><a href="index.html" class="btn btn-ghost">Home</a></li>
+						<li><a href="services.html" class="btn btn-ghost">Services</a></li>
+						<li><a href="about.html" class="btn btn-ghost">About</a></li>
+						<li><a href="contact.html" class="btn btn-ghost">Contact</a></li>
+						<li class="nav-currency-item">
+							<span class="nav-currency-label">Currency</span>
+							<label class="sr-only" for="currency-select">Currency</label>
+							<select id="currency-select" class="nav-currency-select" aria-label="Select a currency for package pricing">
+								<option value="automatic">Auto</option>
+							</select>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container hero-inner">
+					<div class="hero-content reveal">
+						<span class="eyebrow">Web design for growth</span>
+						<h1>Modern websites that help your business stand out</h1>
+						<p class="lead">I build premium, accessible and high-performing websites for businesses that want a stronger online presence and more qualified leads.</p>
+						<div class="hero-ctas">
+							<a class="btn" href="contact.html">Get a quote</a>
+							<a class="btn btn-ghost" href="https://portfolio-d0a.pages.dev" target="_blank" rel="noopener">View portfolio</a>
+						</div>
+						<div class="hero-stats" aria-label="Business impact stats">
+							<div class="hero-stat">
+								<strong>3x</strong>
+								<span>more focused</span>
+							</div>
+							<div class="hero-stat">
+								<strong>Fast</strong>
+								<span>responsive builds</span>
+							</div>
+							<div class="hero-stat">
+								<strong>SEO</strong>
+								<span>ready</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero-art reveal" aria-hidden="true">
+						<div class="large-square" aria-hidden="true">
+							<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_0yfsb3a1.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="services" class="services container">
+				<h2 class="section-title reveal">Services</h2>
+				<p class="section-sub">Design, build and ship production-ready websites, optimized for conversions and speed.</p>
+				<div class="grid grid-3">
+					<article class="card reveal">
+						<div class="icon" aria-hidden="true">
+							<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M2 18h20" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+						</div>
+						<h3>Custom Websites</h3>
+						<p>Pixel-perfect responsive sites built with semantic HTML, modern CSS and progressive enhancement.</p>
+					</article>
+
+					<article class="card reveal">
+						<div class="icon" aria-hidden="true">
+							<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h2l.4 2M7 13h10l3-7H6.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+						</div>
+						<h3>E-commerce</h3>
+						<p>Shopify, WooCommerce or headless storefronts, integrated with analytics and payment flows.</p>
+					</article>
+
+					<article class="card reveal">
+						<div class="icon" aria-hidden="true">
+							<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h3l2-4 4 8 5-6 4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+						</div>
+						<h3>Performance & SEO</h3>
+						<p>Performance-first builds, accessibility checks and SEO fundamentals to help you rank and convert.</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="portfolio" class="portfolio container">
+				<h2 class="section-title reveal">Selected work</h2>
+				<p class="section-sub">A taste of recent projects. See the full portfolio for more case studies.</p>
+				<div class="grid grid-3 projects">
+					<a class="project-card reveal" href="https://portfolio-d0a.pages.dev" target="_blank" rel="noopener">
+						<div class="thumb thumb-portfolio" aria-hidden="true"></div>
+						<h4>Portfolio Site</h4>
+						<p>Personal portfolio and case studies with clean UI and strong performance.</p>
+					</a>
+
+					<a class="project-card reveal" href="../Small_Business_Demo/index.html" target="_blank" rel="noopener">
+						<div class="thumb thumb-business" aria-hidden="true"></div>
+						<h4>Small Business</h4>
+						<p>Local business site with booking integration and marketing pages.</p>
+					</a>
+
+					<a class="project-card reveal" href="../Ecommerce_Demo/index.html" target="_blank" rel="noopener">
+						<div class="thumb thumb-ecommerce" aria-hidden="true"></div>
+						<h4>E-commerce Launch</h4>
+						<p>Launch-ready storefront with cart, checkout and onboarding flow.</p>
+					</a>
+				</div>
+			</section>
+
+			<!-- About and contact sections removed to keep this page a focused landing page.
+				 Use the dedicated About/Contact pages for more details (links in the header). -->
+
+			<section class="testimonial container">
+				<h2 class="section-title reveal">Trusted by teams and founders</h2>
+				<p class="section-sub reveal">I build websites that are fast, accessible and designed to convert.</p>
+				<div class="card reveal" style="margin-top:1rem;">
+					<blockquote style="margin:0;padding:1rem 0;font-style:normal;">
+						<p style="margin:0 0 .5rem;">“Adam delivered our new site on time and exceeded expectations. Load times halved and conversions improved within weeks.”</p>
+						<footer class="muted">Jamie L., Founder</footer>
+					</blockquote>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<p>© <span id="year"></span> ModernWebsByAdam - Built with care.</p>
+				<ul class="footer-links">
+					<li><a href="https://portfolio-d0a.pages.dev">Portfolio</a></li>
+					<li><a href="/Website/contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="script.js" defer></script>
+	</body>
+</html>

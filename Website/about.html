@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About - ModernWebsByAdam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+  </head>
+  <body>
+    <div id="page-transition" class="page-transition" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/Website/index.html"><span>ModernWebsByAdam</span></a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span class="hamburger" aria-hidden="true"></span></button>
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="/Website/index.html" class="btn btn-ghost">Home</a></li>
+            <li><a href="/Website/services.html" class="btn btn-ghost">Services</a></li>
+            <li><a href="/Website/about.html" class="btn btn-ghost">About</a></li>
+            <li><a href="/Website/contact.html" class="btn btn-ghost">Contact</a></li>
+            <li class="nav-currency-item">
+              <span class="nav-currency-label">Currency</span>
+              <label class="sr-only" for="currency-select">Currency</label>
+              <select id="currency-select" class="nav-currency-select" aria-label="Select a currency for package pricing">
+                <option value="automatic">Auto</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container hero reveal">
+        <div class="hero-inner" style="align-items:start;gap:2rem;">
+          <div class="hero-content">
+            <h1>About Adam</h1>
+            <p class="lead">I build modern, accessible and high-performance websites for startups and small businesses. I focus on measurable results with faster load times, better conversions and clear UX.</p>
+            <p>I work closely with founders and marketing teams to turn product-market fit into an efficient website experience. My background spans design, front-end engineering and performance optimization.</p>
+            <div style="margin-top:1rem;">
+              <a class="btn" href="/Website/contact.html">Work with me</a>
+              <a class="btn btn-ghost" href="/Website/services.html" style="margin-left:.5rem">See services</a>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <div class="large-square">
+              <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_0yfsb3a1.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" style="padding-top:2rem;" aria-labelledby="values">
+        <h2 id="values" class="section-title reveal">Experience & values</h2>
+        <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem;">
+          <div class="card reveal"><strong>Design-first</strong><p class="muted">I prioritize clear, usable interfaces and rapid prototyping so stakeholders can iterate quickly.</p></div>
+          <div class="card reveal"><strong>Performance</strong><p class="muted">Fast sites reduce drop-off. I optimize images, critical CSS, and deliver lightweight JS.</p></div>
+          <div class="card reveal"><strong>Accessibility</strong><p class="muted">I follow accessibility best practices so more people can use your product.</p></div>
+        </div>
+      </section>
+
+      <section class="container" style="padding-top:2rem;" aria-labelledby="skills">
+        <h2 id="skills" class="section-title reveal">Skills & tools</h2>
+        <p class="section-sub reveal">A sampling of technologies I use to ship reliable websites.</p>
+        <div class="grid grid-4" style="margin-top:1rem;">
+          <div class="card reveal">HTML & CSS</div>
+          <div class="card reveal">JavaScript / ESNext</div>
+          <div class="card reveal">Performance tuning</div>
+          <div class="card reveal">Lottie & animations</div>
+          <div class="card reveal">Headless CMS</div>
+          <div class="card reveal">E-commerce platforms</div>
+          <div class="card reveal">SEO & analytics</div>
+          <div class="card reveal">Testing & CI</div>
+        </div>
+      </section>
+
+      <section class="container" style="padding-top:2rem;" aria-labelledby="timeline">
+        <h2 id="timeline" class="section-title reveal">Selected timeline</h2>
+        <ol class="muted" style="margin-top:1rem;line-height:1.6;">
+          <li><strong>2020-2022</strong> - Built multiple small business sites and improved conversion rates via performance and UX changes.</li>
+          <li><strong>2022-2023</strong> - Focused on headless CMS integrations and e-commerce projects.</li>
+          <li><strong>2024-present</strong> - Freelance & contract work, supporting launches and ongoing optimization.</li>
+        </ol>
+      </section>
+
+      <section class="container" style="padding-top:2rem;padding-bottom:3rem;" aria-labelledby="testimonials">
+        <h2 id="testimonials" class="section-title reveal">What clients say</h2>
+        <div class="card reveal" style="margin-top:1rem;">
+          <blockquote style="margin:0;padding:1rem 0;font-style:normal;">
+            <p style="margin:0 0 .5rem;">"Adam turned our messy site into a fast, easy-to-edit marketing hub. We saw engagement and signups rise within weeks."</p>
+            <footer class="muted">Sam K., Head of Growth</footer>
+          </blockquote>
+        </div>
+        <div style="margin-top:1rem;"><a class="btn" href="/Website/contact.html?package=Growth">Request a project quote</a></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> ModernWebsByAdam</p>
+        <ul class="footer-links"><li><a href="https://portfolio-d0a.pages.dev">Portfolio</a></li><li><a href="/Website/contact.html">Contact</a></li></ul>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

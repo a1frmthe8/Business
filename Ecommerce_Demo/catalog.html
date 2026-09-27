@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>North & Pine | Catalog</title>
+    <meta name="description" content="Browse the full North & Pine catalog with home, travel, and wellness essentials." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="page-transition" class="page-transition" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="North and Pine home">
+          <span class="logo-mark">N</span>
+          <span>North &amp; Pine</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="index.html#collections">Rooms</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" id="search-toggle" type="button" aria-label="Search products">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.88 12.8l4.42 4.4 1.4-1.4-4.4-4.42A7.5 7.5 0 1010.5 3zm0 2a5.5 5.5 0 110 11 5.5 5.5 0 010-11z"/></svg>
+          </button>
+          <button class="cart-pill" id="cart-toggle" type="button" aria-label="View shopping cart">
+            Cart <span id="cart-count">2</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="catalog-hero container">
+        <div class="catalog-hero-inner">
+          <div class="reveal">
+            <span class="eyebrow">Full catalog</span>
+            <h1>Thoughtful essentials for slower days and fuller routines.</h1>
+            <p class="lead">Curated picks for home, travel, and everyday rituals, chosen to bring comfort, function, and a sense of ease to the way you live.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#catalog-grid">Browse products</a>
+              <a class="btn btn-secondary" href="index.html#collections">View room inspiration</a>
+            </div>
+          </div>
+
+          <div class="catalog-highlight reveal">
+            <span class="eyebrow">Most wanted</span>
+            <h2>Quiet luxury for everyday rituals.</h2>
+            <p>Thoughtful objects for homes, workspaces, and the small moments that make a routine feel beautifully lived in.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section-spacer" id="catalog-grid">
+        <div class="section-heading reveal" id="new-arrivals">
+          <span class="eyebrow">Shop all</span>
+          <h2>Curated essentials</h2>
+        </div>
+
+        <div class="product-grid catalog-grid">
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill">Home</span>
+                <span class="price">$89</span>
+              </div>
+              <h3>Solace Lamp</h3>
+              <p>Warm ambient lighting for evenings that feel calm, layered, and intentional.</p>
+              <div class="product-meta">
+                <span>★★★★★ 4.9</span>
+                <button type="button" class="add-to-cart" data-name="Solace Lamp" data-price="89">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill muted-pill">Desk</span>
+                <span class="price">$149</span>
+              </div>
+              <h3>Dayglass Watch</h3>
+              <p>Minimal daily tracking with a polished profile that feels refined and easy.</p>
+              <div class="product-meta">
+                <span>★★★★★ 4.8</span>
+                <button type="button" class="add-to-cart" data-name="Dayglass Watch" data-price="149">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill">Wellness</span>
+                <span class="price">$64</span>
+              </div>
+              <h3>Morning Bottle</h3>
+              <p>Double-walled hydration for commuting, meetings, and mindful daily rituals.</p>
+              <div class="product-meta">
+                <span>★★★★★ 5.0</span>
+                <button type="button" class="add-to-cart" data-name="Morning Bottle" data-price="64">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill muted-pill">Travel</span>
+                <span class="price">$129</span>
+              </div>
+              <h3>Drift Pack</h3>
+              <p>Clean-lined carry storage with quiet texture and a functional, refined finish.</p>
+              <div class="product-meta">
+                <span>★★★★★ 4.7</span>
+                <button type="button" class="add-to-cart" data-name="Drift Pack" data-price="129">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill">Home</span>
+                <span class="price">$118</span>
+              </div>
+              <h3>Hearth Tray</h3>
+              <p>Stoneware serving tray designed for slower mornings and beautifully styled tables.</p>
+              <div class="product-meta">
+                <span>★★★★★ 4.8</span>
+                <button type="button" class="add-to-cart" data-name="Hearth Tray" data-price="118">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1517841905240-472988c2477d?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill muted-pill">Wellness</span>
+                <span class="price">$42</span>
+              </div>
+              <h3>Bloom Candle</h3>
+              <p>Clean-burning fragrance with a soft mineral scent for brighter, calmer evenings.</p>
+              <div class="product-meta">
+                <span>★★★★★ 5.0</span>
+                <button type="button" class="add-to-cart" data-name="Bloom Candle" data-price="42">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill">Desk</span>
+                <span class="price">$76</span>
+              </div>
+              <h3>North Journal</h3>
+              <p>Thoughtful planning paper for ideas, notes, and the rituals that keep your day moving.</p>
+              <div class="product-meta">
+                <span>★★★★★ 4.9</span>
+                <button type="button" class="add-to-cart" data-name="North Journal" data-price="76">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill muted-pill">Travel</span>
+                <span class="price">$95</span>
+              </div>
+              <h3>Harbor Tote</h3>
+              <p>Roomy, structured carryall for workdays, weekends, and everyday movement.</p>
+              <div class="product-meta">
+                <span>★★★★★ 4.7</span>
+                <button type="button" class="add-to-cart" data-name="Harbor Tote" data-price="95">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill">Home</span>
+                <span class="price">$68</span>
+              </div>
+              <h3>Linen Throw</h3>
+              <p>Soft woven warmth for a sofa, reading chair, or the end of a long day.</p>
+              <div class="product-meta">
+                <span>★★★★★ 4.9</span>
+                <button type="button" class="add-to-cart" data-name="Linen Throw" data-price="68">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill muted-pill">Home</span>
+                <span class="price">$210</span>
+              </div>
+              <h3>Arc Chair</h3>
+              <p>Comfort-forward seating with sculptural lines for reading nooks and corners.</p>
+              <div class="product-meta">
+                <span>★★★★★ 4.8</span>
+                <button type="button" class="add-to-cart" data-name="Arc Chair" data-price="210">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill">Home</span>
+                <span class="price">$54</span>
+              </div>
+              <h3>Soleil Vase</h3>
+              <p>Textured ceramic styling piece that adds warmth, shape, and softness to shelves.</p>
+              <div class="product-meta">
+                <span>★★★★★ 4.9</span>
+                <button type="button" class="add-to-cart" data-name="Soleil Vase" data-price="54">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <span class="pill muted-pill">Wellness</span>
+                <span class="price">$28</span>
+              </div>
+              <h3>Cove Mug</h3>
+              <p>Hand-finished ceramic mug designed for slower starts and deeper coffee rituals.</p>
+              <div class="product-meta">
+                <span>★★★★★ 5.0</span>
+                <button type="button" class="add-to-cart" data-name="Cove Mug" data-price="28">Add to cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="promo-strip reveal">
+          <div>
+            <span class="eyebrow">Need a hand?</span>
+            <h2>Build a complete ritual bundle.</h2>
+          </div>
+          <a class="btn btn-primary" href="index.html#contact">Talk to our styling team</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="search-overlay" id="search-overlay" hidden></div>
+
+    <aside class="search-panel" id="search-panel" aria-label="Search products" aria-hidden="true">
+      <div class="search-header">
+        <div>
+          <span class="eyebrow cart-eyebrow">Find your favorites</span>
+          <h3>Search products</h3>
+        </div>
+        <button type="button" class="cart-close" id="search-close" aria-label="Close search">×</button>
+      </div>
+
+      <div class="search-field-wrap">
+        <input id="search-input" type="search" placeholder="Search lamps, bottles, travel gear..." aria-label="Search products" />
+      </div>
+
+      <ul class="search-results" id="search-results"></ul>
+    </aside>
+
+    <div class="cart-overlay" id="cart-overlay" hidden></div>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <span class="eyebrow cart-eyebrow">Your cart</span>
+          <h3>Shopping bag</h3>
+        </div>
+        <button type="button" class="cart-close" id="cart-close" aria-label="Close cart">×</button>
+      </div>
+
+      <ul class="cart-items" id="cart-items"></ul>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="cart-subtotal">$0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Delivery</span>
+          <strong>$0</strong>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+        <button type="button" class="view-cart-btn">View cart</button>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="logo footer-logo" href="index.html">
+            <span class="logo-mark">N</span>
+            <span>North &amp; Pine</span>
+          </a>
+          <p>Everyday design for a slower, lighter life.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html#shop">Shop</a>
+          <a href="index.html#collections">Collections</a>
+          <a href="index.html#reviews">Reviews</a>
+          <a href="mailto:hello@northandpine.com">hello@northandpine.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
